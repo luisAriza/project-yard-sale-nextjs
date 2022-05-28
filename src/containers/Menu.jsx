@@ -1,11 +1,11 @@
 import React from 'react'
-import "@style/menu.scss"
-import close from "@icon/icon_close.png"
+import close from "@icons/icon_close.png"
+import styles from "@styles/Menu.module.scss"
 
 function Menu() {
 	return (
 
-	<section className="menu">
+	<section className={styles.Menu}>
 		<img src={close} alt="icon de close" className='menu__icon-close' />
 		<ul>
 			<li>

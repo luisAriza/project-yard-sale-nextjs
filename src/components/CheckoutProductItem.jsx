@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import AppContext from "@context/appContext"
-import "@style/orderProductItem.scss"
-import close from "@icon/icon_close.png"
+import close from "@icons/icon_close.png"
+import styles from "@styles/OrderProductItem.module.scss"
 
 function CheckoutItem({ product, index }) {
 	const { removeFromCart } = useContext(AppContext);
@@ -12,7 +12,7 @@ function CheckoutItem({ product, index }) {
 
 	return (
 
-	<div className="checkout__shopping-cart">
+	<div className={styles.OrderProductItem}>
 		<div className="order-item">
 			<figure className='order-item__product-image'>
 				<img src={product.images[0]} alt={product.title} />

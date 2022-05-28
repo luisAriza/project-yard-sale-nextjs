@@ -1,11 +1,11 @@
 import React, { useState, useContext } from 'react'
-import Menu from "@container/Menu"
+import Menu from "@containers/Menu"
 import AppContext from "@context/appContext"
-import Checkout from "@container/Checkout"
-import "@style/navbar.scss"
-import menu from "@icon/icon_menu.svg"
-import logo from "@logo/logo_yard_sale.svg"
-import shoppingCar from "@icon/icon_shopping_cart.svg"
+import Checkout from "@containers/Checkout"
+import menu from "@icons/icon_menu.svg"
+import logo from "@logos/logo_yard_sale.svg"
+import shoppingCar from "@icons/icon_shopping_cart.svg"
+import styles from "@styles/Navbar.module.scss"
 
 function Navbar() {
 	const [toggle, setToggle] = useState(false);
@@ -21,7 +21,7 @@ function Navbar() {
 
 	return (
 
-	<nav className="navbar">
+	<nav className={styles.Navbar}>
 		<img src={menu} alt="icono de hamburguesa del menu" className="navbar__burger" />
 		<div className="navbar__left">
 			<a href="/" className="navbar__logo">

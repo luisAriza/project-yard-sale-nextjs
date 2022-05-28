@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import AppContext from "@context/appContext"
-import ProductItem from "@component/CheckoutProductItem"
-import "@style/checkout.scss"
-import arrow from "@icon/flechita.svg"
+import ProductItem from "@components/CheckoutProductItem"
+import arrow from "@icons/flechita.svg"
+import styles from "@styles/Checkout.module.scss"
 
 function Checkout() {
 	const { state } = useContext(AppContext);
@@ -16,7 +16,7 @@ function Checkout() {
 
 	return (
 
-	<aside className="checkout">
+	<aside className={styles.Checkout}>
 		<div className="checkout__title">
 			<img src={arrow} alt="Flechita" />
 			<h3>Shopping cart</h3>

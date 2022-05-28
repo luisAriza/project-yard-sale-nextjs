@@ -1,5 +1,5 @@
-// import React from 'react';
-import Navbar from "@component/Navbar";
+import React from 'react'
+import Navbar from "@components/Navbar"
 
 const Header = () => {
 	return (
