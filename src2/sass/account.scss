@@ -1,0 +1,37 @@
+@import "components/globals.scss";
+
+.account {
+	&__title {
+		font-size: $lg;
+		font-weight: 700;
+		padding-left: 4px;
+	}
+	&__form {
+		margin-top: 52px;
+	}
+	&__value {
+		height: 40px;
+		font-size: $md;
+		font-weight: 300;
+		padding: 8px 4px;
+		width: 100%;
+		margin-bottom: 24px;
+	}
+	&__button {
+		width: 320px;
+		margin-top: 12px;
+	}
+}
+
+@media (max-width: 640px) {
+	.account {
+		&__title {
+			margin-top: 36px;
+		}
+		&__button {
+			width: 100%;
+			margin-top: 0px;
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,102 @@
+@import "components/globals.scss";
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 12px 50px;
+	box-shadow: 0px -6px 16px 2px $Very-light-pink;
+	&__burger {
+		display: none;
+	}
+	&__left, &__right {
+		display: flex;
+	}
+	&__left ul, &__right ul {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
+	&__logo img {
+		width: 150px;
+		height: 100%;
+	}
+	&__left ul {
+		margin-left: 36px;
+	}
+	&__left ul a {
+		text-decoration: none;
+		color: $Very-light-pink;
+		font-size: $md;
+		font-weight: 500;
+		border: 1.5px solid $White;
+		border-radius: 8px;
+		padding: 4px 12px;
+	}
+	&__left ul a:hover {
+		font-size: $md;
+		border: 1.5px solid $Hospital-green;
+		color: $Hospital-green;
+		transition: .5s;
+	}
+	&__left ul a:not(:hover) {
+		transition: .3s;
+	}
+	&__right img {
+		width: 28px;
+	}
+	&__email {
+		font-size: $md;
+		margin-right: 24px;
+		font-weight: 300;
+		cursor: pointer;
+	}
+	// &__email a {
+	// 	font-size: $md;
+	// 	margin-right: 24px;
+	// 	color: $Hospital-green;
+	// 	font-weight: 500;
+	// 	text-decoration: none;
+	// }
+	&__shopping-cart div {
+		display: flex;
+		justify-content: center;
+		width: 20px;
+		padding: 0 10px;
+		font-size: $sm;
+		font-weight: 700;
+		position: absolute;
+		top: 4px;
+		right: 40px;
+		border: 2px solid $White;
+		border-radius: 50%;
+		color: $White;
+		background-color: $Hospital-green;
+	}
+}
+
+@media (max-width: 991px) {
+	.navbar {
+		padding: 12px 20px;
+		&__burger {
+			display: block;
+			width: auto;
+		}
+		&__logo img {
+			width: 100px;
+		}
+		&__left ul {
+			display: none;
+		}
+		&__right img {
+			width: 24px;
+		}
+		&__email {
+			display: none;
+		}
+		&__shopping-cart div {
+			right: 8px;
+		}
+	}
+}
