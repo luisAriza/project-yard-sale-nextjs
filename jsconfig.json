@@ -17,6 +17,9 @@
 			"@context/*": [
 				"context/*"
 			],
+			"@hooks/*": [
+				"hooks/*"
+			],
 			"@icons/*": [
 				"assets/icons/*"
 			],

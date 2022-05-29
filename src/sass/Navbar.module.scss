@@ -59,7 +59,7 @@
 	// 	font-weight: 500;
 	// 	text-decoration: none;
 	// }
-	&__shopping-cart div {
+	&__shoppingCart div {
 		display: flex;
 		justify-content: center;
 		width: 20px;
@@ -95,7 +95,7 @@
 		&__email {
 			display: none;
 		}
-		&__shopping-cart div {
+		&__shoppingCart div {
 			right: 8px;
 		}
 	}

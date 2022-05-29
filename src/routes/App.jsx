@@ -13,7 +13,7 @@ import Orders from "@templates/MyOrders";
 import Order from "@templates/MyOrder";
 import NotFound from "@templates/NotFound";
 import AppContext from "@context/appContext";
-import useInitialState from "@hook/useInitialState";
+import useInitialState from "@hooks/useInitialState";
 
 const App = () => {
 	const initialState = useInitialState();
