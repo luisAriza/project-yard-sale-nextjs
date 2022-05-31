@@ -9,7 +9,7 @@ function ProductInfo() {
   return (
     <>
       <figure className="product-info__close-icon">
-        <img src={close} alt="Close" />
+        <Image src={close} alt="Close" />
       </figure>
       <figure className="product-info__image">
         <Image src={bike} alt="Bike" />

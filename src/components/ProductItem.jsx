@@ -20,7 +20,7 @@ const ProductItem = ({ product }) => {
           <p className={styles['product-item__price']}>${product.price}</p>
           <p className={styles['product-item__name']}>{product.title}</p>
         </div>
-        <figure onClick={() => handleClick(product)} className={styles['product-item__add-to-car']}>
+        <figure onClick={() => handleClick(product)} onKeyPress={this?.handleKeyPress} role="presentation" className={styles['product-item__add-to-car']}>
           {state.cart.includes(product) ? <Image src={addedCart} alt="Icono de agregar al carrito" /> : <Image src={addCart} alt="Icono de agregar al carrito" />}
         </figure>
       </div>

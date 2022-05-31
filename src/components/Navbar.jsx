@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Menu from '@containers/Menu';
 import AppContext from '@context/appContext';
 import Checkout from '@containers/Checkout';
-import menu from '@icons/icon_menu.svg';
+// import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 import styles from '@styles/Navbar.module.scss';
@@ -23,7 +23,7 @@ function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <Image src={menu} alt="icono de hamburguesa del menu" className={styles['navbar__burger']} />
+      {/* <Image src={menu.src} alt="icono de hamburguesa del menu" className={styles['navbar__burger']} /> */}
       <div className={styles['navbar__left']}>
         <Link href="/" className={styles['navbar__logo']}>
           <Image src={logo} alt="logo" />
@@ -51,11 +51,11 @@ function Navbar() {
       </div>
       <div className={styles.navbar__right}>
         <ul>
-          <li className={styles.navbar__email} onClick={handleToggle}>
+          <li className={styles.navbar__email} onClick={handleToggle} onKeyPress={this?.handleKeyPress} role="presentation">
             lmanuel159@hotmail.com
             {/* <a href="/login">Sign in</a> */}
           </li>
-          <li className={styles.navbar__shoppingCart} onClick={handleToggleCheckout}>
+          <li className={styles.navbar__shoppingCart} onClick={handleToggleCheckout} onKeyPress={this?.handleKeyPress} role="presentation">
             <Image src={shoppingCart} alt="Shopping cart" />
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
