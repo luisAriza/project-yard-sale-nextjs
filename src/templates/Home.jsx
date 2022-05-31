@@ -1,14 +1,12 @@
-import React from 'react'
-import ProductList from "@container/ProductList"
+import React from 'react';
+import ProductList from '@containers/ProductList';
 
 const Home = () => {
-	return (
+  return (
+    <main id="home">
+      <ProductList />
+    </main>
+  );
+};
 
-	<main id="home">
-		<ProductList />
-	</main>
-
-	)
-}
-
-export default Home
+export default Home;

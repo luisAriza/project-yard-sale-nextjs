@@ -13,7 +13,7 @@ const ProductItem = ({ product }) => {
 
   return (
     <div className={styles['product-item']}>
-      <Image src={product.images[0]} alt={product.title} className={styles['product-item__img']} />
+      <Image src={product.images[0]} width="100%" height="100%" layout="responsive" alt={product.title} className={styles['product-item__img']} />
       <div className={styles['product-item__info']}>
         <div>
           <p className={styles['product-item__price']}>${product.price}</p>

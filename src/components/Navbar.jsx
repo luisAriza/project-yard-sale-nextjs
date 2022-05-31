@@ -22,9 +22,9 @@ function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <Image src={menu} alt="icono de hamburguesa del menu" className={styles.navbar__burger} />
-      <div className={styles.navbar__left}>
-        <a href="/" className={styles.navbar__logo}>
+      <Image src={menu} alt="icono de hamburguesa del menu" className={styles["navbar__burger"]} />
+      <div className={styles["navbar__left"]}>
+        <a href="/" className={styles["navbar__logo"]}>
           <Image src={logo} alt="logo" />
         </a>
         <ul>

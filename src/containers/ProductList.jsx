@@ -10,9 +10,11 @@ function ProductList() {
 
   return (
     <section className={styles['cards-container']}>
-      {products.map((product) => (
-        <ProductItem product={product} key={product.id} />
-      ))}
+      {products.map((product) => {
+        if (product.images.length > 0 && product.images[0] !== '') {
+          return <ProductItem product={product} key={product.id} />;
+        }
+      })}
     </section>
   );
 }
