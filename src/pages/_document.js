@@ -4,9 +4,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          <title>Next Shop</title>
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />
@@ -15,3 +13,5 @@ class MyDocument extends Document {
     );
   }
 }
+
+export default MyDocument;

@@ -4,9 +4,9 @@ import styles from '@styles/OrdersList.module.scss';
 
 function OrderList() {
   return (
-    <section className="orders-container">
-      <h1 className="orders-container__title">My orders</h1>
-      <div className="orders-container__content">
+    <section className={styles['orders-container']}>
+      <h1 className={styles['orders-container__title']}>My orders</h1>
+      <div className={styles['orders-container__content']}>
         <OrderItem />
         <OrderItem />
         <OrderItem />
