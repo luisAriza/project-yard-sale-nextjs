@@ -12,6 +12,7 @@
 	box-shadow: -2px 12px 20px -8px $Dark;
 	padding: 20px;
 	background-color: $White;
+	z-index: 1;
 	&__title {
 		display: flex;
 		gap: 30px;

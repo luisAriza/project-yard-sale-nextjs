@@ -26,6 +26,9 @@
 			"@logos/*": [
 				"assets/logos/*"
 			],
+			"@images/*": [
+				"assets/images/*"
+			],
 			"@styles/*": [
 				"sass/*"
 			]

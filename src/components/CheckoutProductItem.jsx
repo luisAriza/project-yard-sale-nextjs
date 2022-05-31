@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Image from 'next/image';
 import AppContext from '@context/appContext';
 import close from '@icons/icon_close.png';
 import styles from '@styles/OrderProductItem.module.scss';
@@ -11,15 +12,15 @@ function CheckoutItem({ product, index }) {
   };
 
   return (
-    <div className={styles.OrderProductItem}>
-      <div className="order-item">
-        <figure className="order-item__product-image">
-          <img src={product.images[0]} alt={product.title} />
+    <div className={styles['checkout__shopping-cart']}>
+      <div className={styles['order-item']}>
+        <figure className={styles['order-item__product-image']}>
+          <Image src={product.images[0]} width="100%" height="100%" layout="responsive" alt={product.title} />
         </figure>
-        <p className="order-item__title">{product.title}</p>
-        <p className="order-item__price">$ {product.price}</p>
+        <p className={styles['order-item__title']}>{product.title}</p>
+        <p className={styles['order-item__price']}>$ {product.price}</p>
       </div>
-      <img src={close} alt="Eliminar producto" className="checkout__icon-close" onClick={() => handleRemove(product)} />
+      <Image src={close} alt="Eliminar producto" className={styles['checkout__icon-close']} onClick={() => handleRemove(product)} />
     </div>
   );
 }

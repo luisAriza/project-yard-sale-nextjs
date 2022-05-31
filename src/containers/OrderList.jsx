@@ -1,6 +1,6 @@
 import React from 'react';
-import OrderItem from '@component/OrderItem';
-import '@style/ordersList.scss';
+import OrderItem from '@components/OrderItem';
+import styles from '@styles/OrdersList.module.scss';
 
 function OrderList() {
   return (

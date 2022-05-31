@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Menu from '@containers/Menu';
 import AppContext from '@context/appContext';
 import Checkout from '@containers/Checkout';
@@ -22,29 +23,29 @@ function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <Image src={menu} alt="icono de hamburguesa del menu" className={styles["navbar__burger"]} />
-      <div className={styles["navbar__left"]}>
-        <a href="/" className={styles["navbar__logo"]}>
+      <Image src={menu} alt="icono de hamburguesa del menu" className={styles['navbar__burger']} />
+      <div className={styles['navbar__left']}>
+        <Link href="/" className={styles['navbar__logo']}>
           <Image src={logo} alt="logo" />
-        </a>
+        </Link>
         <ul>
           <li>
-            <a href="#">All</a>
+            <Link href="#">All</Link>
           </li>
           <li>
-            <a href="#">Clothes</a>
+            <Link href="#">Clothes</Link>
           </li>
           <li>
-            <a href="#">Electronics</a>
+            <Link href="#">Electronics</Link>
           </li>
           <li>
-            <a href="#">Furniture</a>
+            <Link href="#">Furniture</Link>
           </li>
           <li>
-            <a href="#">Toys</a>
+            <Link href="#">Toys</Link>
           </li>
           <li>
-            <a href="#">Others</a>
+            <Link href="#">Others</Link>
           </li>
         </ul>
       </div>
