@@ -2,10 +2,11 @@ import React, { useContext } from 'react';
 import Image from 'next/image';
 import AppContext from '@context/appContext';
 import addCart from '@icons/bt_add_to_cart.svg';
+import addedCart from '@icons/bt_added_to_cart.svg';
 import styles from '@styles/ProductItem.module.scss';
 
 const ProductItem = ({ product }) => {
-  const { addToCart } = useContext(AppContext);
+  const { state, addToCart } = useContext(AppContext);
 
   const handleClick = (item) => {
     addToCart(item);
@@ -20,7 +21,7 @@ const ProductItem = ({ product }) => {
           <p className={styles['product-item__name']}>{product.title}</p>
         </div>
         <figure onClick={() => handleClick(product)} className={styles['product-item__add-to-car']}>
-          <Image src={addCart} alt="Icono de agregar al carrito" />
+          {state.cart.includes(product) ? <Image src={addedCart} alt="Icono de agregar al carrito" /> : <Image src={addCart} alt="Icono de agregar al carrito" />}
         </figure>
       </div>
     </div>
